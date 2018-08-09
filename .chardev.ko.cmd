@@ -1,0 +1,1 @@
+cmd_/home/rick/GNX/test/chardev.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/rick/GNX/test/chardev.ko /home/rick/GNX/test/chardev.o /home/rick/GNX/test/chardev.mod.o ;  true
