@@ -1,5 +1,5 @@
 ## First Linux Character Device Driver
-
+### With Mutex Lock
 Read/Write into Pseudo Character Device Driver.
 to check the output of write run:
 ```sh
