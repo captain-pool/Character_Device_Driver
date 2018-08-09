@@ -7,7 +7,7 @@ to check the output of write run:
 ```
 or keep this running on another terminal
 ```sh
-tail -f cat /var/log/kern.log
+tail -f /var/log/kern.log
 ```
 To run the module,
 ```sh
