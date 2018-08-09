@@ -1,1 +1,0 @@
-cmd_/home/rick/GNX/test/test.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/rick/GNX/test/test.ko /home/rick/GNX/test/test.o /home/rick/GNX/test/test.mod.o ;  true
