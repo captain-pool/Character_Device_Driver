@@ -1,5 +1,5 @@
 ## First Linux Character Device Driver
-
+### With Mutex Lock
 Read/Write into Pseudo Character Device Driver.
 to check the output of write run:
 ```sh
@@ -7,7 +7,7 @@ to check the output of write run:
 ```
 or keep this running on another terminal
 ```sh
-tail -f cat /var/log/kern.log
+tail -f /var/log/kern.log
 ```
 To run the module,
 ```sh
