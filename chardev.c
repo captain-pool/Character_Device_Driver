@@ -52,6 +52,7 @@ unregister_chrdev(Major,DEVICE_NAME);
 return PTR_ERR(dev);
 }
 mutex_init(&dev_mutex);
+sprintf(msg,"Default Txt");
 return 0;
 }
 static void __exit mod_exit(void)
@@ -71,7 +72,6 @@ printk(KERN_ALERT"Device Busy!");
 return -EBUSY;
 }
 devOC++;
-sprintf(msg,"Default Txt");
 msgPtr=msg;
 return 0;
 }
@@ -96,6 +96,7 @@ static ssize_t dev_write(struct file* file,const char*buff,size_t length,loff_t 
 {
 copy_from_user(msg,buff,length);
 printk("Data Recieved: %s",msg);
+msgPtr=msg;
 return length;
 }
 module_init(mod_init);
